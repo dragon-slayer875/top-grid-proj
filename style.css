@@ -22,7 +22,8 @@ body {
 }
 
 .logo {
-    display: flex;
+    display: grid;
+    grid-auto-flow: column;
     align-items: center;
     margin: 15px 30px 0px 15px;
 }
@@ -43,22 +44,47 @@ body {
     margin: 0px 0px 0px 27.5px;
     font-size: 20px;
     font-weight: 500;
-    display: flex;
-    flex-direction: column;
-    align-content: baseline;
-}
-
-.options-2 {
-    margin-top: 20px;
+    display: grid;
 }
 
 .option {
-    display: flex;
-    flex: 1 1 45px;
-    align-items: center;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: start;
+    margin-top: 10px;
 }
 
 .icon {
     width: 25px;
     margin-right: 20px;
+}
+
+.main {
+    display: grid;
+    grid-template-rows: auto 4fr;
+}
+
+.header {
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+.icon-black {
+    width: 25px;
+}
+
+input[type="search"] {
+    min-width: 100px;
+    background: #e2e8f0;
+    
+}
+
+.top,
+.bottom {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+button {
+    max-width: 100px;
 }
