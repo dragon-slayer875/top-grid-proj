@@ -268,3 +268,25 @@ hr {
 .a-content > span {
     font-size: 0.7rem;
 }
+
+.trending-card {
+    background: white;
+    margin: 10px 0px 10px 0px; 
+    border-radius: 5px;
+    box-shadow: 2px 3px 5px#ccc8c8;
+    display: grid;
+    gap: 20px;
+    padding: 35px 30px;
+}
+
+.trend-item {
+    display: grid;
+    align-items: center;
+    grid-auto-flow: column;
+    gap: 15px;
+}
+
+.trend-text > span:first-child {
+    font-size: 0.8rem;
+    font-weight: 400;
+}
